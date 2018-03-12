@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: pivxd.service
-Upstart: pivxd.conf
-OpenRC:  pivxd.openrc
-         pivxd.openrcconf
-CentOS:  pivxd.init
+SystemD: zakad.service
+Upstart: zakad.conf
+OpenRC:  zakad.openrc
+         zakad.openrcconf
+CentOS:  zakad.init
 
 have been made available to assist packagers in creating node packages here.
 

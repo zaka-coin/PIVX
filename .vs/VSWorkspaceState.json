@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src\\qt\\res",
+    "\\src\\qt\\test",
+    "\\src\\secp256k1\\src",
+    "\\src\\univalue",
+    "\\src\\univalue\\build-aux\\m4"
+  ],
+  "SelectedNode": "\\.vs",
+  "PreviewInSolutionExplorer": false
+}

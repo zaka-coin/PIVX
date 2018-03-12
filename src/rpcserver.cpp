@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2018 The ZAKA developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -352,35 +353,35 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* PIVX features */
-        {"pivx", "masternode", &masternode, true, true, false},
-        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
-        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
-        {"pivx", "startmasternode", &startmasternode, true, true, false},
-        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"pivx", "mnbudget", &mnbudget, true, true, false},
-        {"pivx", "preparebudget", &preparebudget, true, true, false},
-        {"pivx", "submitbudget", &submitbudget, true, true, false},
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
-        {"pivx", "mnsync", &mnsync, true, true, false},
-        {"pivx", "spork", &spork, true, true, false},
-        {"pivx", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"zaka", "masternode", &masternode, true, true, false},
+        {"zaka", "listmasternodes", &listmasternodes, true, true, false},
+        {"zaka", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"zaka", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"zaka", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"zaka", "masternodedebug", &masternodedebug, true, true, false},
+        {"zaka", "startmasternode", &startmasternode, true, true, false},
+        {"zaka", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"zaka", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"zaka", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"zaka", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"zaka", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"zaka", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"zaka", "mnbudget", &mnbudget, true, true, false},
+        {"zaka", "preparebudget", &preparebudget, true, true, false},
+        {"zaka", "submitbudget", &submitbudget, true, true, false},
+        {"zaka", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"zaka", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"zaka", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"zaka", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"zaka", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"zaka", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"zaka", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"zaka", "checkbudgets", &checkbudgets, true, true, false},
+        {"zaka", "mnsync", &mnsync, true, true, false},
+        {"zaka", "spork", &spork, true, true, false},
+        {"zaka", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"pivx", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"zaka", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -607,7 +608,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> pivx-cli " + methodname + " " + args + "\n";
+    return "> zaka-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

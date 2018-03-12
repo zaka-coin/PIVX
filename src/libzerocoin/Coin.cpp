@@ -11,6 +11,7 @@
  **/
 
 // Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2017-2018 The ZAKA developers
 #include <stdexcept>
 #include <iostream>
 #include "Coin.h"

@@ -1,0 +1,26 @@
+[Unit]
+Description=ZAKA's distributed currency daemon
+After=network.target
+
+[Service]
+User=zaka
+Group=zaka
+
+Type=forking
+PIDFile=/var/lib/zakad/zakad.pid
+
+ExecStart=/usr/bin/zakad -daemon -pid=/var/lib/zakad/zakad.pid \
+          -conf=/etc/zaka/zaka.conf -datadir=/var/lib/zakad
+
+ExecStop=-/usr/bin/zaka-cli -conf=/etc/zaka/zaka.conf \
+         -datadir=/var/lib/zakad stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

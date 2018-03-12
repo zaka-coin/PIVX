@@ -1,0 +1,26 @@
+# /etc/conf.d/zakad: config file for /etc/init.d/zakad
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/zaka/zaka.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/zakad"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/zakad.pid"
+
+# Where to write zakad data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/zakad"
+
+# User and group to own zakad process
+#BITCOIND_USER="zaka"
+#BITCOIND_GROUP="zaka"
+
+# Path to zakad executable
+#BITCOIND_BIN="/usr/bin/zakad"
+
+# Nice value to run zakad under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

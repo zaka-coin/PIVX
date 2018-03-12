@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between pivx-cli and pivxd)
+ * CBaseChainParams defines the base parameters (shared between zaka-cli and zakad)
  * of a given instance of the Pivx system.
  */
 class CBaseChainParams
