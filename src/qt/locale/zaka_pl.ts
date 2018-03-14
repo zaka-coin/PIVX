@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres PIVX jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this ZAKA address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres ZAKA jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,12 +518,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>&amp;Rdzeń PIVX</translation>
+        <source>ZAKA Core</source>
+        <translation>&amp;Rdzeń ZAKA</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
-        <translation>Wyślij monety do adresu PIVX</translation>
+        <source>Send coins to a ZAKA address</source>
+        <translation>Wyślij monety do adresu ZAKA</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and zaka: URIs)</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
+        <source>&amp;About ZAKA Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
+        <source>Show information about ZAKA Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Modyfikuj opcje konfiguracji PIVX</translation>
+        <source>Modify configuration options for ZAKA</source>
+        <translation>Modyfikuj opcje konfiguracji ZAKA</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami PIVX, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your ZAKA addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami ZAKA, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu PIVX</translation>
+        <source>Verify messages to ensure they were signed with specified ZAKA addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu ZAKA</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Otwórz PIVX: URI i żądanie zapłaty</translation>
+        <source>Open a ZAKA: URI or payment request</source>
+        <translation>Otwórz ZAKA: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia PIVX, aby dostać listę możliwych opcji PIVX command-line</translation>
+        <source>Show the ZAKA Core help message to get a list with possible ZAKA command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia ZAKA, aby dostać listę możliwych opcji ZAKA command-line</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>Rdzeń PIVX klient</translation>
+        <source>ZAKA Core client</source>
+        <translation>Rdzeń ZAKA klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>&amp;Rdzeń PIVX</translation>
+        <source>ZAKA Core</source>
+        <translation>&amp;Rdzeń ZAKA</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>&amp;Rdzeń PIVX</translation>
+        <source>ZAKA Core</source>
+        <translation>&amp;Rdzeń ZAKA</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automatycznie uruchom PIVX po zalogowaniu do systemu</translation>
+        <source>Automatically start ZAKA after logging in to the system.</source>
+        <translation>Automatycznie uruchom ZAKA po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Uruchom PIVX podczas logowania do systemu</translation>
+        <source>&amp;Start ZAKA on system login</source>
+        <translation>&amp;Uruchom ZAKA podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,8 +1212,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie PIVX</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting ZAKA.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie ZAKA</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1222,8 +1222,8 @@ https://www.transifex.com/zaka-project/zaka-project-translations</source>
 https://www.transifex.com/zaka-project/zaka-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią PIVX poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the ZAKA network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią ZAKA poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/zaka-project/zaka-project-translations </translation>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
-        <translation>Wprowadź adres PIVX (np. %1)</translation>
+        <source>Enter a ZAKA address (e.g. %1)</source>
+        <translation>Wprowadź adres ZAKA (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/zaka-project/zaka-project-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres PIVX jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this ZAKA address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres ZAKA jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/zaka-project/zaka-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>&amp;Rdzeń PIVX</translation>
+        <source>ZAKA Core</source>
+        <translation>&amp;Rdzeń ZAKA</translation>
     </message>
     </context>
 <context>

@@ -223,8 +223,8 @@
         <translation>BIP 38 Kryptering</translation>
     </message>
     <message>
-        <source>Enter a Pivx Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Ange en Pivx adress som du vill kryptera med BIP 38.
+        <source>Enter a Zaka Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Ange en Zaka adress som du vill kryptera med BIP 38.
 Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den krypterade privata nyckeln.</translation>
     </message>
     <message>
@@ -265,7 +265,7 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
     </message>
     <message>
         <source>Sign the message to prove you own this ZAKA address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna PIVX adress</translation>
+        <translation>Signera meddelandet för att bevisa att du äger denna ZAKA adress</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -288,12 +288,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Ange BIP 38 krypterade privata nyckeln. Ange lösenfrasen i med mittersta boxen. Tryck på krypetra nyckel för att beräkna den privata nyckeln. Efter att nyckeln är avkrypterad, Tryck på 'Importera Adress' kommer att lägga till denna privata nyckel till plånboken.</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>PIVX adressen meddelandet blev signerat med</translation>
+        <source>The ZAKA address the message was signed with</source>
+        <translation>ZAKA adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika PIVX adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified ZAKA address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ZAKA adressen.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -583,12 +583,12 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>flik vertygsrad</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Kärna</translation>
+        <source>ZAKA Core</source>
+        <translation>ZAKA Kärna</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
-        <translation>Skicka mynt till en PIVX adress</translation>
+        <source>Send coins to a ZAKA address</source>
+        <translation>Skicka mynt till en ZAKA adress</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and zaka: URIs)</source>
@@ -603,24 +603,24 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Utforska masternoder</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>Om PIVX Kärnan</translation>
+        <source>&amp;About ZAKA Core</source>
+        <translation>Om ZAKA Kärnan</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Visa information om PIVX Kärnan</translation>
+        <source>Show information about ZAKA Core</source>
+        <translation>Visa information om ZAKA Kärnan</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Ändra konfigurationsval för PIVX</translation>
+        <source>Modify configuration options for ZAKA</source>
+        <translation>Ändra konfigurationsval för ZAKA</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
-        <translation>Signera meddelanden med din PIVX adress för att visa att du äger dem</translation>
+        <source>Sign messages with your ZAKA addresses to prove you own them</source>
+        <translation>Signera meddelanden med din ZAKA adress för att visa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika PIVX adressen.</translation>
+        <source>Verify messages to ensure they were signed with specified ZAKA addresses</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ZAKA adressen.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -631,8 +631,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kryptera och avkryptera privata nycklar genom användning av lösenfras</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX kärn klient</translation>
+        <source>ZAKA Core client</source>
+        <translation>ZAKA kärn klient</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -837,15 +837,15 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Kärna</translation>
+        <source>ZAKA Core</source>
+        <translation>ZAKA Kärna</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Kärna</translation>
+        <source>ZAKA Core</source>
+        <translation>ZAKA Kärna</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1157,8 +1157,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>PIVX adressen för signera meddelandet med</translation>
+        <source>The ZAKA address to sign the message with</source>
+        <translation>ZAKA adressen för signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1181,16 +1181,16 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
         <translation>Kopiera den nuvarande signaturen till systemets urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Signera meddelandet för att bevisa att du äger denna PIVX adress</translation>
+        <source>Sign the message to prove you own this ZAKA address</source>
+        <translation>Signera meddelandet för att bevisa att du äger denna ZAKA adress</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>PIVX adressen meddelandet blev signerat med</translation>
+        <source>The ZAKA address the message was signed with</source>
+        <translation>ZAKA adressen meddelandet blev signerat med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
-        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika PIVX adressen.</translation>
+        <source>Verify the message to ensure it was signed with the specified ZAKA address</source>
+        <translation>Verifiera meddelandet för att säkerställa att de blev signerat med den specifika ZAKA adressen.</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1232,8 +1232,8 @@ Ange en lösenfras i den mellersta boxen. Tryck kryptera för att beräkna den k
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Kärna</translation>
+        <source>ZAKA Core</source>
+        <translation>ZAKA Kärna</translation>
     </message>
     </context>
 <context>
