@@ -169,7 +169,7 @@ public:
         //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
         //vSeeds.push_back(CDNSSeedData("192.168.100.25", "192.168.100.25"));           // Single node address
         //vSeeds.push_back(CDNSSeedData("192.168.100.22", "192.168.100.22"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("192.168.100.20:8080", "192.168.100.20:8080"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("test.zakaseeder.com", "192.168.100.20"));           // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
