@@ -153,7 +153,7 @@ bool GetLocal(CService& addr, const CNetAddr* paddrPeer)
 // one by discovery.
 CAddress GetLocalAddress(const CNetAddr* paddrPeer)
 {
-    CAddress ret(CService("0.0.0.0", GetListenPort()), 0);
+    CAddress ret(CService("192.168.100.1", GetListenPort()), 0);
     CService addr;
     if (GetLocal(addr, paddrPeer)) {
         ret = CAddress(addr);

@@ -167,10 +167,9 @@ public:
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "zaka.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
         //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
-        //vSeeds.push_back(CDNSSeedData("192.168.100.25", "192.168.100.25"));           // Single node address
-        //vSeeds.push_back(CDNSSeedData("192.168.100.22", "192.168.100.22"));           // Single node address
-        //vSeeds.push_back(CDNSSeedData("192.168.100.20", "192.168.100.20"));
-        vSeeds.push_back(CDNSSeedData("www.filehosting.org", "www.filehosting.org/file/details/730042"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("192.168.100.25", "192.168.100.34"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("192.168.100.22", "192.168.100.31"));           // Single node address
+        vSeeds.push_back(CDNSSeedData("192.168.100.20", "192.168.100.28"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
