@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "ZakaCoin, ./home/usama/Downloads/ZAKA-master/ZakaOutput/a.out",
+            "program": "${workspaceFolder}/src/zakad",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
