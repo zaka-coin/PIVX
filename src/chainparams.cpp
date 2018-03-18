@@ -105,7 +105,7 @@ public:
         pchMessageStart[3] = 0xe9;
         vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50");
         nDefaultPort = 51472;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // ZAKA starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 1; // ZAKA starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
@@ -119,15 +119,15 @@ public:
         nMaxMoneyOut = 21000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 259200;
-        nModifierUpdateBlock = 615800;
-        nZerocoinStartHeight = 863787;
-        nZerocoinStartTime = 1508214600; // October 17, 2017 4:30:00 AM
-        nBlockEnforceSerialRange = 895400; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 908000; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 891737; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 891730; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 902850; //Start enforcing the invalid UTXO's
+        nLastPOWBlock = 500;
+        nModifierUpdateBlock = 999999999;
+        nZerocoinStartHeight = 200;
+        nZerocoinStartTime = 1517542208; // October 17, 2017 4:30:00 AM
+        nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = ~1; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 1; //Start enforcing the invalid UTXO's
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -149,15 +149,15 @@ public:
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 4;
+        genesis.nVersion = 1;
         genesis.nTime = 1517542208;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 327898;
+        genesis.nNonce = 355238;
 
         //std::cout << "hashGenesisBlock: " << hashGenesisBlock.ToString() << "\n";
         //std::cout << "genises.hashMerkleRoot: " << genesis.hashMerkleRoot.ToString() << "\n";
-        uint256 required_hash = uint256("0x00000aa1cfc9537e123ba150818d3d383ca8938e274cf8aa3cf6236d53d91de2");
-        //Create_genesis_block(genesis, required_hash);
+        uint256 required_hash = uint256("0x00000e0715d0c482da79aaf081724dbde8d350ce5de9db83230423be37a2e363");
+        Create_genesis_block(genesis, required_hash);
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == required_hash);
@@ -186,7 +186,7 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false;
+        fSkipProofOfWorkCheck = true;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 
@@ -210,7 +210,24 @@ public:
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
     }
+    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
+    {
+    bool fNegative;
+    bool fOverflow;
+    uint256 bnTarget;
 
+    bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
+
+    // Check range
+    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > bnProofOfWorkLimit)
+        return error("CheckProofOfWork() : nBits below minimum work");
+
+    // Check proof of work matches claimed amount
+    if (hash > bnTarget)
+        return error("CheckProofOfWork() : hash doesn't match nBits");
+
+    return true;
+    }
     void Create_genesis_block(CBlock block, uint256 hash) {
         // mParsec Code to Generate Genesis Block
         // Comment the above code with assert and run the below code 2 times with 
@@ -221,18 +238,17 @@ public:
             printf("Searching for genesis block...\n");
             // This will figure out a valid hash and Nonce if you're
             // creating a different genesis block:
-            uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
             uint256 thash;
             block.nNonce = 0;
 
             while(true)
             {
                 thash = block.GetHash();
-                if (thash <= hashTarget)
+                if (CheckProofOfWork(thash, block.nBits))
                     break;
                 if ((block.nNonce & 0xFFF) == 0)
                 {
-                    printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+                    printf("nonce %08X: hash = %s (target not matched)\n", block.nNonce, thash.ToString().c_str());
                     //break;
                 }
                 ++block.nNonce;
@@ -294,10 +310,10 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1517545508;
-        genesis.nNonce = 327913;
+        genesis.nNonce = 1340404;
 
-        uint256 required_hash = uint256("0x00000c1fab281db5513bf7a39cbb5bd8981734a74a72575a450bc22e2f42cdae");
-        //Create_genesis_block(genesis, required_hash);
+        uint256 required_hash = uint256("0x00000a2a24d20ff35d7c60bb8094dc8b96a2982caa415faa68496f815982509d");
+        Create_genesis_block(genesis, required_hash);
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == required_hash);
 
@@ -366,11 +382,11 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1517547708;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 1;
+        genesis.nNonce = 0;
 
         nDefaultPort = 51476;
-        uint256 required_hash = uint256("0x5be178421e80c8f73d590b90a467b6a2f90ca5a8499a32867a2c3a40fe81ae08");
-        //Create_genesis_block(genesis, required_hash);
+        uint256 required_hash = uint256("0x5b8e1cc64f49a65318e91363081305666c759e7f0fd17a3d2a20e4987b014456");
+        Create_genesis_block(genesis, required_hash);
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == required_hash);
 
