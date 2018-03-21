@@ -204,11 +204,11 @@ public:
             "31438167899885040445364023527381951378636564391212010397122822120720357";
         nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
         nMinZerocoinMintFee = 1 * CENT; //high fee required for zerocoin mints
-        nMintRequiredConfirmations = 20; //the maximum amount of confirmations until accumulated in 19
+        nMintRequiredConfirmations = 1; //actual 20 by usama; //the maximum amount of confirmations until accumulated in 19
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
-        nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
+        nBudget_Fee_Confirmations = 1; //actual 6 by usama; // Number of confirmations for the finalization fee
     }
     bool CheckProofOfWork(uint256 hash, unsigned int nBits)
     {
