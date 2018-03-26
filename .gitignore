@@ -129,3 +129,4 @@ qa/pull-tester/test.*/*
 CMakeLists.txt
 cmake-build-debug
 /.vs/ZAKA/v15/Browse.VC.opendb
+.vscode/c_cpp_properties.json
