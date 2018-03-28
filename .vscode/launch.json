@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/src/zakad",
+            "program": "${workspaceFolder}/src/qt/zaka-qt",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
