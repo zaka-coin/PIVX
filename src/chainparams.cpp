@@ -163,13 +163,11 @@ public:
         assert(hashGenesisBlock == required_hash);
         assert(genesis.hashMerkleRoot == uint256("0x5b69daf5979c9714cc7c08d024fae2a25a8030e05cfd68486018999789a4178b"));        
 
-        //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "zaka.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
+        vSeeds.push_back(CDNSSeedData("agentr.io", "zaka.seeds.agentr.io"));     // Primary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "zaka.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
         //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
         //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
-        vSeeds.push_back(CDNSSeedData("81.4.102.75", "81.4.102.75"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("192.168.100.20", "192.168.100.20"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("192.168.100.27", "192.168.100.27"));
+        //vSeeds.push_back(CDNSSeedData("81.4.102.75", "81.4.102.75"));           // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
