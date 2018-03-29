@@ -168,7 +168,7 @@ public:
         //vSeeds.push_back(CDNSSeedData("coin-server.com", "coin-server.com"));         // Single node address
         //vSeeds.push_back(CDNSSeedData("s3v3nh4cks.ddns.net", "s3v3nh4cks.ddns.net")); // Single node address
         vSeeds.push_back(CDNSSeedData("81.4.102.75", "81.4.102.75"));           // Single node address
-        vSeeds.push_back(CDNSSeedData("168.235.108.207", "168.235.108.207"); // Single node address
+        vSeeds.push_back(CDNSSeedData("168.235.108.207", "168.235.108.207")); // Single node address
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
